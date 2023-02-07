@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Overview from "./pages/Overview";
 import { Reports, ReportsOne, ReportsTwo, ReportsThree } from "./pages/Reports";
 import { Messages, MessagesOne, MessagesTwo, MessagesThree } from "./pages/Messages";
-import Team from "./pages/Team";
-import TreeView from "./pages/TreeView";
+
 
 
 function App() {
@@ -23,8 +22,7 @@ function App() {
         <Route path="/level2items/item1" exact component={MessagesOne} />
         <Route path="/level2items/item2" exact component={MessagesTwo} />
         <Route path="/level2items/item3" exact component={MessagesThree} />
-        <Route path="/team" exact component={Team} />
-        <Route path="/tree" exact component={TreeView} />
+        
       </Switch>
     </Router>
   );

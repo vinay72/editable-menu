@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const SidebarLink = styled(Link)`
   display: flex;
@@ -40,11 +40,30 @@ const DropdownLink = styled(Link)`
   }
 `;
 
+const DropdownLinkSubItem = styled(Link)`
+  // background: #414757;
+  height: 32px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 14px;
+  justify-content: flex-end;
+  &:hover {
+    background: #632ce4;
+    cursor: pointer;
+  }
+`;
+
 const SubMenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
+  const [showsubnavItem, setShowsubnavItem] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);
-
+  const onClickHandler = () => {
+    setShowsubnavItem((show) => !show)
+  }
   return (
     <>
       <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
@@ -63,10 +82,54 @@ const SubMenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <DropdownLink to={item.path} key={index}>
-              {item.icon}
-              <SidebarLabel>{item.title}</SidebarLabel>
-            </DropdownLink>
+            <div >
+              <DropdownLink to={item.path} key={index} onClick={onClickHandler}>
+                {item.icon}
+                <SidebarLabel>{item.title}</SidebarLabel>
+              </DropdownLink>
+              {showsubnavItem ? item?.subNav1 &&
+                item?.subNav1.map((subItem) => (
+                  <DropdownLinkSubItem to={item.path} key={index}>
+                    {subItem.icon}
+                    <SidebarLabel>{subItem.title}</SidebarLabel>
+                  </DropdownLinkSubItem>
+                )): null}
+               {showsubnavItem ? item?.subNav2 &&
+                item?.subNav2.map((subItem) => (
+                  <DropdownLinkSubItem to={item.path} key={index}>
+                    {subItem.icon}
+                    <SidebarLabel>{subItem.title}</SidebarLabel>
+                  </DropdownLinkSubItem>
+                )): null}  
+                {showsubnavItem ? item?.subNav3 &&
+                item?.subNav3.map((subItem) => (
+                  <DropdownLinkSubItem to={item.path} key={index}>
+                    {subItem.icon}
+                    <SidebarLabel>{subItem.title}</SidebarLabel>
+                  </DropdownLinkSubItem>
+                )): null}  
+                {showsubnavItem ? item?.subNav4 &&
+                item?.subNav4.map((subItem) => (
+                  <DropdownLinkSubItem to={item.path} key={index}>
+                    {subItem.icon}
+                    <SidebarLabel>{subItem.title}</SidebarLabel>
+                  </DropdownLinkSubItem>
+                )): null} 
+                {showsubnavItem ? item?.subNav5 &&
+                item?.subNav5.map((subItem) => (
+                  <DropdownLinkSubItem to={item.path} key={index}>
+                    {subItem.icon}
+                    <SidebarLabel>{subItem.title}</SidebarLabel>
+                  </DropdownLinkSubItem>
+                )): null}  
+                {showsubnavItem ? item?.subNav6 &&
+                item?.subNav6.map((subItem) => (
+                  <DropdownLinkSubItem to={item.path} key={index}>
+                    {subItem.icon}
+                    <SidebarLabel>{subItem.title}</SidebarLabel>
+                  </DropdownLinkSubItem>
+                )): null}
+            </div>
           );
         })}
     </>

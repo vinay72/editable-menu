@@ -38,18 +38,60 @@ export const SidebarData = [
         title: 'Level 1.1',
         path: '/items/item1',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
+        cName: 'sub-nav',
+        subNav4: [
+          {
+            title: 'Level 1.1.1',
+            path: '/items/item1',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Level 1.1.2',
+            path: '/items/item2',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+        ]
       },
       {
         title: 'Level 1.2',
         path: '/items/item2',
         icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
+        cName: 'sub-nav',
+        subNav5: [
+          {
+            title: 'Level 1.2.1',
+            path: '/items/item1',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Level 1.2.2',
+            path: '/items/item2',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+        ]
       },
       {
         title: 'Level 1.3',
         path: '/items/item3',
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        subNav6: [
+          {
+            title: 'Level 1.3.1',
+            path: '/items/item1',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Level 1.3.2',
+            path: '/items/item2',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+        ]
       }
     ]
   },
@@ -73,19 +115,60 @@ export const SidebarData = [
         title: 'Level 2.1',
         path: "/level2items/item1",
         icon: <IoIcons.IoIosPaper />,
-       
+        subNav1: [
+          {
+            title: 'Level 2.1.1',
+            path: '/items/item1',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Level 2.1.2',
+            path: '/items/item2',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+        ]
         
         
       },
       {
         title: 'Level 2.2',
         path: "/level2items/item2",
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        subNav2: [
+          {
+            title: 'Level 2.2.1',
+            path: '/items/item1',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Level 2.2.2',
+            path: '/items/item2',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+        ]
       },
       {
         title: 'Level 2.3',
         path: "/level2items/item3",
-        icon: <IoIcons.IoIosPaper />
+        icon: <IoIcons.IoIosPaper />,
+        subNav3: [
+          {
+            title: 'Level 2.3.1',
+            path: '/items/item1',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+          {
+            title: 'Level 2.3.2',
+            path: '/items/item2',
+            icon: <IoIcons.IoIosPaper />,
+            cName: 'sub-nav'
+          },
+        ]
       }
 
     ]

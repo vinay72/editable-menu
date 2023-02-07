@@ -15,6 +15,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 #### Running DEMO IN LOCALHOST SERVER
 
+![screencapture-localhost-3000-items-item3-2023-02-07-02_31_03](https://user-images.githubusercontent.com/28500944/217224042-999d7060-d5f7-4a12-a006-54e6d34bb5dc.png)
+
+
+![screencapture-localhost-3000-level2items-item1-2023-02-07-02_27_01](https://user-images.githubusercontent.com/28500944/217224059-ca0f86bb-e724-4537-9cce-db3dae3bd99c.png)
+
+
+![screencapture-localhost-3000-level2items-item3-2023-02-07-02_26_48](https://user-images.githubusercontent.com/28500944/217224078-c69e27c6-c957-4bf0-8d30-f6968226f732.png)
+
 
 
 The page will reload when you make changes.\
